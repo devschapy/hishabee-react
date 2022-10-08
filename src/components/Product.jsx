@@ -1,20 +1,11 @@
 import React from 'react';
-import { Card } from './Common/Card';
 import Input from './Form/Input';
+import { ProductData } from '../productData';
+import { Card } from './Common/Card';
 import { Avatar } from './Common/Avatar';
 
 const Product = () => {
-    const productData = [
-        {
-            name: 'রূপচাঁদা সয়াবিন তেল',
-            subName: 'মুদি পণ্য',
-            prdctImage: "img/rise.png",
-            checkbox: "checkbox",
-            stok: 900,
-            by: 850,
-            sell: 900,
-        }
-    ]
+
     return (
         <div className="col-8">
             <Card>
@@ -39,12 +30,12 @@ const Product = () => {
                     </div>
 
                     {
-                        productData.map((item, index) => {
+                        ProductData.map((item, index) => {
                             console.log(item);
                             return (
-                                <div key={index} className="grid-items ">
-                                    <input id='id1' className="checkbox" type={item.checkbox} />
-                                    <label htmlFor="id1" className="product">
+                                <div key={index} className={item.styles}>
+                                    <input id={item.id} className={`${item.uniCheckStylel} checkbox`} type={item.checkbox} />
+                                    <label htmlFor={item.id} className="product">
                                         <div className="d-flex">
                                             <Avatar src={item.prdctImage} />
                                             <div className="px-2">
@@ -53,10 +44,16 @@ const Product = () => {
                                             </div>
                                         </div>
 
+                                        {/* {
+                                            item.nxtPrdct.map((itm, index) => {
+                                                <input id={itm.id} className={`checkbox`} type={itm.checkbox} />
+
+                                            })
+                                        } */}
                                     </label>
-                                    <label htmlFor="id1" className="stok font-lg">{item.stok}</label>
-                                    <label htmlFor="id1" className="by font-lg">{item.by}</label>
-                                    <label htmlFor="id1" className="sell font-lg">{item.sell}</label>
+                                    <label htmlFor={item.id} className="stok font-lg">{item.stok}</label>
+                                    <label htmlFor={item.id} className="by font-lg">{item.by}</label>
+                                    <label htmlFor={item.id} className="sell font-lg">{item.sell}</label>
                                 </div>
                             )
                         })
