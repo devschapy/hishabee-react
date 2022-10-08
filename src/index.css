@@ -7,7 +7,92 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.font-sm{
+  font-size: 10px;
 }
+.font-md{
+  font-size: 12px;
+}
+.font-lg{
+  font-size: 14px;
+}
+.font-bold{
+  font-weight: bold;
+}
+.bg{
+  background-color: antiquewhite;
+}
+.bg-gray{
+  background-color: #F5F5F5;
+}
+.search-icon{
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+.imge{
+  width: 40px;
+  height: 40px;
+}
+.header-top{
+  /* border: 0px 0px 1px 0px solid black;
+   */
+   border-bottom: 1px solid rgb(228, 227, 227);
+}
+.menu-icon{
+  width: 28px;
+  height: 20px;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.side-icon{
+  width: 34px;
+}
+
+/* grid area  */
+.grid-container {
+  display: grid;
+  row-gap: 10px;
+}
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  
+}
+.checkbox{
+  grid-column: 1/2;
+  text-align: center;
+}
+.product-checkbox{
+  align-self: start;
+}
+.product{
+  grid-column: 2/7;
+}
+.unic-product{
+  grid-column: 2/-1;
+}
+
+.stok{
+  grid-column: 7/9;
+  text-align: center;
+}
+.by{
+  grid-column: 9/11;
+  text-align: center;
+}
+.sell{
+  grid-column: 11/-1;
+  text-align: center;
+}
+
+
+
