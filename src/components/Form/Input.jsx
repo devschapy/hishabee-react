@@ -5,7 +5,7 @@ import styles from './Input.module.css'
 export const Input = ({ divStyle, type, className, label, placeholder, name, id }) => {
   return (
     <div className={divStyle}>
-      <label className={styles.label} htmlFor={id}>{label}</label>
+      <label htmlFor={id}>{label}</label>
       <input
         type={type}
         placeholder={placeholder}

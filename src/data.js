@@ -4,26 +4,20 @@ export const ProductData = [
         name: 'রূপচাঁদা সয়াবিন তেল',
         subName: 'মুদি পণ্য',
         prdctImage: "img/rise.png",
-        checkbox: "checkbox",
         stok: 900,
         by: 850,
         sell: 900,
-        styles: "grid-items"
     },
     {
         id: 2,
         name: 'রূপচাঁদা সয়াবিন তেল',
         subName: 'মুদি পণ্য',
         prdctImage: "img/milk.png",
-        checkbox: "checkbox",
-        uniCheckStylel: "product-checkbox mt-2",
-        styles: "grid-items border py-1",
         nxtPrdct: [
             {
                 id: 21,
                 name: '৩ লিটার',
                 prdctImage: "img/oil.png",
-                checkbox: "checkbox",
                 stok: 250,
                 by: 850,
                 sell: 900,
@@ -32,16 +26,14 @@ export const ProductData = [
                 id: 22,
                 name: '৩ লিটার',
                 prdctImage: "img/chili.png",
-                checkbox: "checkbox",
                 stok: 250,
                 by: 850,
                 sell: 900,
             },
             {
                 id: 23,
-                name: '৩ লিটার',
+                name: "৩ লিটার",
                 prdctImage: "img/oil3.png",
-                checkbox: "checkbox",
                 stok: 250,
                 by: 850,
                 sell: 900,
@@ -53,9 +45,41 @@ export const ProductData = [
         name: 'রূপচাঁদা সয়াবিন তেল',
         subName: 'মুদি পণ্য',
         prdctImage: "img/chili.png",
-        checkbox: "checkbox",
         stok: 900,
         by: 850,
         sell: 900,
-        styles: "grid-items"
     }];
+
+
+export const PaymentData = [
+        {
+            id: 1,
+            name: 'নগদ টাকা',
+            image: '/img/money 2.png'
+        },
+        {
+            id: 2,
+            name: 'ডিজিটাল পেমেন্ট',
+            image: '/img/cashless-payment 2.png'
+        },
+        {
+            id: 3,
+            name: 'বাকী',
+            image: '/img/Group 4622.png'
+        },
+        {
+            id: 4,
+            name: 'Nagod',
+            image: '/img/image 317.png'
+        },
+        {
+            id: 5,
+            name: 'Rocket',
+            image: '/img/image-removebg-preview 1.png'
+        },
+        {
+            id: 6,
+            name: 'Bank',
+            image: '/img/image 313.png'
+        },
+    ];

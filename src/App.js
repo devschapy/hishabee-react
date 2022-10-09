@@ -7,7 +7,6 @@ function App() {
         <Routes>
             <Route path="/" exect  element={<Login/>}/>
             <Route path="/home"  element={<Home/>}/>
-
         </Routes>
     );
 }
